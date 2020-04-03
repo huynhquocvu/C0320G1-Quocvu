@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đổi tiền tệ</title>
+</head>
+<body>
+Amount<input type="text" id="amount">
+From Currecy <select id="fromCurrecy">
+    <option>USD</option>
+    <option>VNĐ</option>
+    <option>ERO</option>
+</select>
+To Currecy <select id="toCurrecy">
+    <option>VNĐ</option>
+    <option>USD</option>
+    <option>ERO</option>
+</select>
+<button type="button" onclick="kq()">change</button>
+<p id="result"></p>
+</body>
+<script>
+    let at = document.getElementById('amount');
+    let Fc = document.getElementById('fromCurrecy');
+    let tc = document.getElementById('toCurrecy');
+    let result;
+
+    function
+    kq() {
+        if (Fc.value === "VNĐ" && tc.value === "USD") {
+            result = at.value / 23000
+        } else if (Fc.value === "USD" && tc.value === "VNĐ") {
+            result = at.value * 23000
+        } else if (Fc.value === "VNĐ" && tc.value === "ERO"){
+            result = at.value/32000
+        }else if (Fc.value==="ERO" && tc.value==="VNĐ"){
+            result = at.value *32000
+        } else if (Fc.value==="ERO" && tc.value==="USD"){
+            result = at.value*1.2
+        } else if (Fc.value==="USD" && tc.value==="ERO"){
+            result= at.value/12
+        }
+
+        else
+        {
+
+            result = 'yêu cầu chọn loại tiền'
+        }
+        document.getElementById('result').innerText = result
+    }
+
+</script>
+</html>
