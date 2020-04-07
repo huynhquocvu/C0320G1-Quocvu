@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Furama</title>
+</head>
+<body>
+<script>
+    let name ;
+    let cmnd ;
+    let birthday;
+    let email;
+    let address;
+    let typeRoom;
+    let discount;
+    let rentdays;
+    let typeservice;
+    let totalpay
+    name = prompt('name')
+    cmnd = prompt('cmnd')
+    birthday = prompt('birthday')
+    email=prompt('email')
+    address = prompt('addrress')
+    typeRoom = prompt('typeRoom')
+    discount = prompt('discount')
+    rentdays = prompt('rentdays')
+    typeservice = prompt('typeservice')
+    totalpay = (500*rentdays*(1-discount/100))
+        document.writeln('name : ' + name
+        + 'cmnd : ' + cmnd + 'totalpay :' + totalpay )
+
+</script>
+</body>
+</html>
