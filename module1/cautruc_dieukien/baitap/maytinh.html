@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4"><input type="text" id="kq"></td>
+    </tr>
+
+    <tr>
+        <td>
+            <button type="button" onclick="nhap('1')">1</button>
+            <button type="button" onclick="nhap('2')">2</button>
+            <button type="button" onclick="nhap('3')">3</button>
+            <button type="button" onclick="nhap('+')">+</button>
+        </td>
+    <tr>
+        <td>
+        <button type="button" onclick="nhap('4')">4</button>
+        <button type="button" onclick="nhap('5')">5</button>
+        <button type="button" onclick="nhap('6')">6</button>
+        <button type="button" onclick="nhap('-')">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="nhap('7')">7</button>
+            <button type="button" onclick="nhap('8')">8</button>
+            <button type="button" onclick="nhap('9')">9</button>
+            <button type="button" onclick="nhap('*')">*</button>
+        </td>
+    </tr>
+    <tr> <td>
+        <button type="button" onclick="xoagiatri()">c</button>
+        <button type="button" onclick="nhap('0')">0</button>
+        <button type="button" onclick="tinhtoan()">=</button>
+        <button type="button" onclick="nhap('/')" >/</button></td>
+    </tr>
+</table>
+<script>
+let kq = document.getElementById('kq');
+    function nhap(so) {
+        kq.value += so
+    }
+    function tinhtoan() {
+        kq.value = eval(kq.value)
+    }
+    function xoagiatri() {
+        kq.value = ("");
+
+    }
+</script>
+</body>
+</html>
