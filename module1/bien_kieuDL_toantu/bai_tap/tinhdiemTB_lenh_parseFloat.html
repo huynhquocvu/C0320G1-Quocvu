@@ -7,14 +7,11 @@
 <body>
 <h1>Điểm học kì</h1>
 <script>
-    let A= prompt('điểm môn lý:');
-    let B= prompt('điểm môn hóa:');
-    let C= prompt('điểm môn toán:');
-    let a = parseFloat(A);
-    let b = parseFloat(B);
-    let c = parseFloat(C);
-    let DTB= (a+b+c)/3;
-    let TD = (a+b+c);
+    let A=parseFloat(prompt('điểm môn lý:'));
+    let B=parseFloat(prompt('điểm môn hóa:'));
+    let C= parseFloat (prompt('điểm môn toán:'));
+    let DTB= (A+B+C)/3;
+    let TD = (A+B+C)
     document.writeln('Điễm trung bình :'+ DTB);
     document.writeln('<br>') ;
     document.writeln('tổng điểm :'+TD);

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="day1">
+<button type="button" onclick="dayy()">tính số ngày</button>
+<p id="soNgay"></p>
+<script>
+
+    function dayy() {
+        let day11 = document.getElementById('day1').value;
+      switch (day11) {
+            case "1":
+            case "3":
+            case "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12":
+                text = document.getElementById('soNgay').innerText = '' + ' có 31 ngày';
+                break;
+            case "2":
+                text = document.getElementById('soNgay').innerText ='' + ' có 28 hoặc 29 ngày';
+                break;
+            case "4":
+            case "6":
+            case "9":
+            case "11":
+                text = document.getElementById('soNgay').innerText ='' +" có 30 ngày";
+                break;
+            default:
+                text = document.getElementById('soNgay').innerText = "xin chọn tháng";
+                break;
+        }
+    }
+
+
+</script>
+
+
+</body>
+</html>
